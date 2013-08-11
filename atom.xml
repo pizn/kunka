@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
    <title>Jekyll Theme</title>
-   <link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml"/>
-   <link href="http://localhost:4000" rel="alternate" type="text/html" />
-   <updated>2013-08-11T22:55:40+08:00</updated>
-   <id>http://localhost:4000</id>
+   <link href="/atom.xml" rel="self" type="application/atom+xml"/>
+   <link href="" rel="alternate" type="text/html" />
+   <updated>2013-08-11T23:09:24+08:00</updated>
+   <id></id>
    <author>
      <name>掌心</name>
      <email>zhanxin.info@gmail.com</email>
@@ -14,18 +14,18 @@
    
    <entry>
      <title>kunka 主题归来</title>
-     <link href="http://localhost:4000/2013/08/11/kunka-back.html"/>
+     <link href="/2013/08/11/kunka-back.html"/>
      <updated>2013-08-11T20:55:11+08:00</updated>
-     <id>http://localhost:4000/2013/08/11/kunka-back</id>
+     <id>/2013/08/11/kunka-back</id>
      <content type="html">&lt;p&gt;很久之前就把视觉稿画好了，周末有时间，把它给写了出来。下面介绍下 Kunka 主题。&lt;/p&gt;
 </content>
    </entry>
    
    <entry>
      <title>TYPO.CSS</title>
-     <link href="http://localhost:4000/2012/08/10/typo-css.html"/>
+     <link href="/2012/08/10/typo-css.html"/>
      <updated>2012-08-10T20:55:11+08:00</updated>
-     <id>http://localhost:4000/2012/08/10/typo-css</id>
+     <id>/2012/08/10/typo-css</id>
      <content type="html">&lt;h2 id=&quot;tagline&quot;&gt;一致化浏览器排版效果，构建最适合中文阅读的网页排版&lt;/h2&gt;
 
 &lt;ol id=&quot;table&quot;&gt;
