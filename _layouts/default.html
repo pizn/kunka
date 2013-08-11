@@ -44,7 +44,7 @@
         <div class="head fn-clear">
             <div class="header">
                 <h1 class="logo">
-                    <a href="/"><i class="icon-anchor"></i></a>
+                    <a href="{{ site.url }}"><i class="icon-anchor"></i></a>
                 </h1>
                 <nav class="nav">
                     <ul>
@@ -54,7 +54,7 @@
                           {% assign active = 'nav-item-active' %}
                         {% endif %}
                         <li class="nav-item {{ active }}">
-                            <a href="{{ link.url }}">
+                            <a href="{{ site.url }}{{ link.url }}">
                                 {{ link.text }}
                             </a>
                             {{ indicator }}
@@ -91,7 +91,7 @@
                         <h4 class="title">Recent Posts</h4>
                         <ul class="list">
                             {% for rpost in site.posts limit:6  %}
-                                <li><a href="{{ rpost.url }}" title="{{ rpost.title }}" rel="bookmark">{{ rpost.title }}</a></li>
+                                <li><a href="{{ site.url }}{{ rpost.url }}" title="{{ rpost.title }}" rel="bookmark">{{ rpost.title }}</a></li>
                             {% endfor %}
                         </ul>
                     </div>
