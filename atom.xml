@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+   <title>Jekyll Theme</title>
+   <link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml"/>
+   <link href="http://localhost:4000" rel="alternate" type="text/html" />
+   <updated>2013-08-11T22:55:40+08:00</updated>
+   <id>http://localhost:4000</id>
+   <author>
+     <name>掌心</name>
+     <email>zhanxin.info@gmail.com</email>
+   </author>
+
+   
+   <entry>
+     <title>kunka 主题归来</title>
+     <link href="http://localhost:4000/2013/08/11/kunka-back.html"/>
+     <updated>2013-08-11T20:55:11+08:00</updated>
+     <id>http://localhost:4000/2013/08/11/kunka-back</id>
+     <content type="html">&lt;p&gt;很久之前就把视觉稿画好了，周末有时间，把它给写了出来。下面介绍下 Kunka 主题。&lt;/p&gt;
+</content>
+   </entry>
+   
+   <entry>
+     <title>TYPO.CSS</title>
+     <link href="http://localhost:4000/2012/08/10/typo-css.html"/>
+     <updated>2012-08-10T20:55:11+08:00</updated>
+     <id>http://localhost:4000/2012/08/10/typo-css</id>
+     <content type="html">&lt;h2 id=&quot;tagline&quot;&gt;一致化浏览器排版效果，构建最适合中文阅读的网页排版&lt;/h2&gt;
+
+&lt;ol id=&quot;table&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#section1&quot;&gt;关于 TYPO.CSS&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#section2&quot;&gt;排版实例&lt;/a&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#section2-1&quot;&gt;例1：论语学而篇第一&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#section2-2&quot;&gt;例2：英文排版&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#section3&quot;&gt;附录&lt;/a&gt;
+        &lt;ol&gt;
+            &lt;li&gt;&lt;a href=&quot;#appendix1&quot;&gt;TYPO.CSS 排版偏重点&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#appendix2&quot;&gt;开源许可&lt;/a&gt;&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;section1&quot;&gt;一、关于 TYPO.CSS&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;TYPO.CSS&lt;/em&gt; 的目的是，在一致化浏览器排版效果的同时，构建最适合中文阅读的网页排版。&lt;/p&gt;
+
+&lt;h4&gt;现状和如何去做：&lt;/h4&gt;
+
+&lt;p&gt;排版是一个麻烦的问题，需要精心设计，而这个设计却是常被视觉设计师所忽略的。前端工程师更常看到这样的问题，但不便变更。因为在多个 OS 中的不同浏览器渲染不同，改动需要多的时间做回归测试，所以改变变得更困难。而像我们一般使用的 Yahoo、Eric Meyer 和 Alice base.css 中采用的 Reset 都没有很好地考虑中文排版。TYPO.CSS 要做的就是解决中文排版的问题。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TYPO.CSS 测试于如下平台：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table summary=&quot;TYPO.CSS 的测试平台列表&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;OS/浏览器&lt;/th&gt;
+            &lt;th&gt;Firefox&lt;/th&gt;
+            &lt;th&gt;Chrome&lt;/th&gt;
+            &lt;th&gt;Safari&lt;/th&gt;
+            &lt;th&gt;Opera&lt;/th&gt;
+            &lt;th&gt;IE9&lt;/th&gt;
+            &lt;th&gt;IE8&lt;/th&gt;
+            &lt;th&gt;IE7&lt;/th&gt;
+            &lt;th&gt;IE6&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Mac OS X&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Windows 7&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Windows XP&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Ubuntu Linux&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td&gt;√&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4&gt;中文排版的重点和难点&lt;/h4&gt;
+
+&lt;p&gt;在中文排版中，HTML4 的很多标准在语义在都有照顾到。但从视觉效果上，却很难利用单独的 CSS 来实现，像&lt;abbr title=&quot;在文字下多加一个点&quot;&gt;着重号&lt;/abbr&gt;。在 HTML4 中，着重号标签（&lt;code&gt;&amp;lt;u&amp;gt;&lt;/code&gt;）已经被放弃，而 HTML5 被&lt;a href=&quot;http://html5doctor.com/u-element/&quot;&gt;重新提起&lt;/a&gt;。TYPO.CSS 也根据实际情况提供相应的方案。我们重要要注意的两点是：&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;语义：语义对应的用法和样式是否与中文排版一致&lt;/li&gt;
+    &lt;li&gt;表现：在各浏览器中的字体、大小和缩放是否如排版预期&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;对于这些，TYPO.CSS 排版项目的中文偏重注意点，都添加在附录中，详见：&lt;/p&gt;
+
+&lt;blockquote&gt;
+    &lt;b&gt;附录一&lt;/b&gt;：&lt;a href=&quot;#appendix1&quot;&gt;TYPO.CSS 排版偏重点&lt;/a&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;目前仍处于 alpha 开发阶段，测试平台的覆盖，特别是在&lt;abbr title=&quot;手机、平板电脑等移动平台&quot;&gt;移动端&lt;/abbr&gt;上还没有覆盖完主流平台，希望有能力的同学能加入测试行列，或者加入到 TYPO.CSS 的开发。加入方法：&lt;a href=&quot;https://github.com/sofish/typo.css&quot;&gt;参与 TYPO.CSS 开发&lt;/a&gt;。如有批评、建议和意见，也随时欢迎给在 Github 直接提 &lt;a href=&quot;https://github.com/sofish/typo.css/issues&quot;&gt;issues&lt;/a&gt;，或给&lt;abbr title=&quot;Sofish Lin, author of TYPO.CSS&quot; role=&quot;author&quot;&gt;我&lt;/abbr&gt;发&lt;a href=&quot;mailto:sofish@163.com&quot;&gt;邮件&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h2 id=&quot;section2&quot;&gt;二、排版实例：&lt;/h2&gt;
+
+&lt;p&gt;提供2个排版实例，第一个中文实例来自于来自于&lt;cite class=&quot;typo-unique&quot;&gt;张燕婴&lt;/cite&gt;的《论语》，由于古文排版涉及到的元素比较多，所以采用《论语》中《学而》的第一篇作为排版实例介绍；第2个来自到经典的 Lorem Ipsum，并加入了一些代码和列表等比较具有代表性的排版元素。&lt;/p&gt;
+
+&lt;h3 id=&quot;section2-1&quot;&gt;例1：论语学而篇第一&lt;/h3&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;b&gt;作者：&lt;/b&gt;&lt;abbr title=&quot;名丘，字仲尼&quot;&gt;孔子&lt;/abbr&gt;（&lt;time&gt;前551年9月28日－前479年4月11日&lt;/time&gt;）&lt;/small&gt;&lt;/p&gt;
+
+&lt;h4&gt;本篇引语&lt;/h4&gt;
+
+&lt;p&gt;《学而》是《论语》第一篇的篇名。《论语》中各篇一般都是以第一章的前二三个字作为该篇的篇名。《学而》一篇包括16章，内容涉及诸多方面。其中重点是“吾日三省吾身”；“节用而爱人，使民以时”；“礼之用，和为贵”以及仁、孝、信等道德范畴。 &lt;/p&gt;
+
+&lt;h4&gt;原文&lt;/h4&gt;
+
+&lt;p&gt;子曰&lt;sup&gt;&lt;a href=&quot;#note1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;：“学&lt;sup&gt;&lt;a href=&quot;#note2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;而时习&lt;sup&gt;&lt;a href=&quot;#note3&quot;&gt;[3]&lt;/a&gt;&lt;/sup&gt;之，不亦说&lt;sup&gt;&lt;a href=&quot;#note4&quot;&gt;[4]&lt;/a&gt;&lt;/sup&gt;乎？有朋&lt;sup&gt;&lt;a href=&quot;#note5&quot;&gt;[5]&lt;/a&gt;&lt;/sup&gt;自远方来，不亦乐&lt;sup&gt;&lt;a href=&quot;#note6&quot;&gt;[6]&lt;/a&gt;&lt;/sup&gt;乎？人不知&lt;sup&gt;&lt;a href=&quot;#note7&quot;&gt;[7]&lt;/a&gt;&lt;/sup&gt;，而不愠&lt;sup&gt;&lt;a href=&quot;#note8&quot;&gt;[8]&lt;/a&gt;&lt;/sup&gt;，不亦君子&lt;sup&gt;&lt;a href=&quot;#note9&quot;&gt;[9]&lt;/a&gt;&lt;/sup&gt;乎？” &lt;/p&gt;
+
+&lt;h4&gt;注释&lt;/h4&gt;
+
+&lt;p&gt;
+&lt;small&gt;
+&lt;span id=&quot;note1&quot;&gt;[1]&lt;/span&gt; 子：中国古代对于有地位、有学问的男子的尊称，有时也泛称男子。《论语》书中“子曰”的子，都是指孔子而言。&lt;br /&gt;
+&lt;span id=&quot;note2&quot;&gt;[2]&lt;/span&gt; 学：孔子在这里所讲的“学”，主要是指学习西周的礼、乐、诗、书等传统文化典籍。 &lt;br /&gt;
+&lt;span id=&quot;note3&quot;&gt;[3]&lt;/span&gt; 时习：在周秦时代，“时”字用作副词，意为“在一定的时候”或者“在适当的时候”。但朱熹在《论语集注》一书中把“时”解释为“时常”。“习”，指演习礼、乐；复习诗、书。也含有温习、实习、练习的意思。 &lt;br /&gt;
+&lt;span id=&quot;note4&quot;&gt;[4]&lt;/span&gt; 说：音ｙｕè，同悦，愉快、高兴的意思。 &lt;br /&gt;
+&lt;span id=&quot;note5&quot;&gt;[5]&lt;/span&gt; 有朋：一本作“友朋”。旧注说，“同门曰朋”，即同在一位老师门下学习的叫朋，也就是志同道合的人。 &lt;br /&gt;
+&lt;span id=&quot;note6&quot;&gt;[6]&lt;/span&gt; 乐：与说有所区别。旧注说，悦在内心，乐则见于外。 &lt;br /&gt;
+&lt;span id=&quot;note7&quot;&gt;[7]&lt;/span&gt; 人不知：此句不完整，没有说出人不知道什么。缺少宾语。一般而言，知，是了解的意思。人不知，是说别人不了解自己。 &lt;br /&gt;
+&lt;span id=&quot;note8&quot;&gt;[8]&lt;/span&gt; 愠：音ｙùｎ，恼怒，怨恨。 &lt;br /&gt;
+&lt;span id=&quot;note9&quot;&gt;[9]&lt;/span&gt; 君子：《论语》书中的君子，有时指有德者，有时指有位者。此处指孔子理想中具有高尚人格的人。
+&lt;/small&gt;
+&lt;/p&gt;
+
+&lt;h4&gt;译文&lt;/h4&gt;
+
+&lt;p&gt;孔子说：“学了又时常温习和练习，不是很愉快吗？有志同道合的人从远方来，不是很令人高兴的吗？人家不了解我，我也不怨恨、恼怒，不也是一个有德的君子吗？” &lt;/p&gt;
+
+&lt;h4&gt;评析&lt;/h4&gt;
+
+&lt;p&gt;宋代著名学者&lt;u class=&quot;typo-u&quot;&gt;朱熹&lt;/u&gt;对此章评价极高，说它是“入道之门，积德之基”。本章这三句话是人们非常熟悉的。历来的解释都是：学了以后，又时常温习和练习，不也高兴吗等等。三句话，一句一个意思，前后句子也没有什么连贯性。但也有人认为这样解释不符合原义，指出这里的“学”不是指学习，而是指学说或主张；“时”不能解为时常，而是时代或社会的意思，“习”不是温习，而是使用，引申为采用。而且，这三句话不是孤立的，而是前后相互连贯的。这三句的意思是：自己的学说，要是被社会采用了，那就太高兴了；退一步说，要是没有被社会所采用，可是很多朋友赞同&lt;abbr title=&quot;张燕婴&quot;&gt;我&lt;/abbr&gt;的学说，纷纷到我这里来讨论问题，我也感到快乐；再退一步说，即使社会不采用，人们也不理解我，我也不怨恨，这样做，不也就是君子吗？（见《齐鲁学刊》1986年第6期文）这种解释可以自圆其说，而且也有一定的道理，供读者在理解本章内容时参考。&lt;/p&gt;
+
+&lt;p&gt;此外，在对“人不知，而不愠”一句的解释中，也有人认为，“人不知”的后面没有宾语，人家不知道什么呢？当时因为孔子有说话的特定环境，他不需要说出知道什么，别人就可以理解了，却给后人留下一个谜。有人说，这一句是接上一句说的，从远方来的朋友向我求教，我告诉他，他还不懂，我却不怨恨。这样，“人不知”就是“人家不知道我所讲述的”了。这样的解释似乎有些牵强。&lt;/p&gt;
+
+&lt;p&gt;总之，本章提出以学习为乐事，做到人不知而不愠，反映出孔子学而不厌、诲人不倦、注重修养、严格要求自己的主张。这些思想主张在《论语》书中多处可见，有助于对第一章内容的深入了解。&lt;/p&gt;
+
+&lt;h3 id=&quot;section2-2&quot;&gt;例2：英文排版&lt;/h3&gt;
+
+&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
+
+&lt;blockquote&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+&lt;/blockquote&gt;
+
+&lt;h4&gt;The standard Lorem Ipsum passage, used since the 1500s&lt;/h4&gt;
+
+&lt;p&gt;&quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;&lt;/p&gt;
+
+&lt;h4&gt;Section 1.10.32 of &quot;de Finibus Bonorum et Malorum&quot;, written by Cicero in 45 BC&lt;/h4&gt;
+
+&lt;p&gt;&quot;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&quot;&lt;/p&gt;
+
+&lt;h4&gt;List style in action&lt;/h4&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
+        &lt;p&gt;如果你希望成功，当以恒心为良友，以经验为参谋，以谨慎为兄弟，以希望为哨兵。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Sometimes one pays most for the things one gets for nothing.
+        &lt;p&gt;有时候一个人为不花钱得到的东西付出的代价最高。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Only those who have the patience to do simple things perfectly ever acquire the skill to do difficult things easily.
+        &lt;p&gt;只有有耐心圆满完成简单工作的人，才能够轻而易举的完成困难的事。&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;You may want to create a perfect &lt;code&gt;&amp;lt;hr /&amp;gt;&lt;/code&gt; line, despite the fact that there will never have one&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;abbr title=&quot;法国作家罗切福考尔德&quot;&gt;La Racheforcauld&lt;/abbr&gt; said: &lt;mark&gt;&quot;Few things are impossible in themselves; and it is often for want of will, rather than of means, that man fails to succeed&quot;.&lt;/mark&gt; You just need to follow the browser's behavior, and set a right &lt;code&gt;margin&lt;/code&gt; to it。it will works nice as the demo you're watching now. The following code is the best way to render typo in Chinese:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;c&quot;&gt;/* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 */&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h6&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Arial&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.4em&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.8em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.8em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.6em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;h3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.4em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;h4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.2em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;h5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* 现代排版：保证块/段落之间的空白隔行 */&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.typo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.typo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;pre&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.typo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.typo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ol&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.typo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;dl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.typo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.typo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;hr&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.6em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;section3&quot;&gt;三、附录&lt;/h3&gt;
+
+&lt;h5 id=&quot;appendix1&quot;&gt;1、TYPO.CSS 排版偏重点&lt;/h5&gt;
+
+&lt;table summary=&quot;TYPO.CSS 排版偏重点&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;类型&lt;/th&gt;
+            &lt;th&gt;语义&lt;/th&gt;
+            &lt;th&gt;标签&lt;/th&gt;
+            &lt;th&gt;注意点&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th rowspan=&quot;15&quot;&gt;基础标签&lt;/th&gt;
+          &lt;td&gt;标题&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;h1&lt;/code&gt; ～ &lt;code&gt;h6&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;全局不强制大小，&lt;code&gt;.typo&lt;/code&gt; 中标题与其对应的内容应紧贴，并且有相应的大小设置&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;上、下标&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;sup&lt;/code&gt;/&lt;code&gt;sub&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;保持与 MicroSoft Office Word 等程序的日常排版一致&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;引用&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;blockquote&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;显示/嵌套样式&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;缩写&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;abbr&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;是否都有下划线，鼠标 &lt;code&gt;hover&lt;/code&gt; 是否为帮助手势&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;分割线&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;hr&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;显示的 &lt;code&gt;padding&lt;/code&gt; 和 &lt;code&gt;margin&lt;/code&gt;正确&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;列表&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;ul&lt;/code&gt;/&lt;code&gt;ol&lt;/code&gt;/&lt;code&gt;dl&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;在全局没有 &lt;code&gt;list-style&lt;/code&gt;，在 .&lt;code&gt;typo&lt;/code&gt; 中对齐正确&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;定义列表&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;dl&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;全局 &lt;code&gt;padding&lt;/code&gt; 和 &lt;code&gt;margin&lt;/code&gt;为0， .&lt;code&gt;typo&lt;/code&gt; 中对齐正确&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;选项&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;input[type=radio[, checkbox]]&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;与其他 &lt;code&gt;form&lt;/code&gt; 元素排版时是否居中&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;斜体&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;i&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;只设置一种斜体，让 &lt;code&gt;em&lt;/code&gt; 和  &lt;code&gt;cite&lt;/code&gt; 显示为正体&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;强调&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;em&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;在全局显示正体，在 &lt;code&gt;.typo&lt;/code&gt; 中显示与 &lt;code&gt;b&lt;/code&gt; 和 &lt;code&gt;strong&lt;/code&gt; 的样式一致，为粗休&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;加强&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;strong/b&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;显示为粗体&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;标记&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;mark&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;类似荧光笔&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;印刷&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;small&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;保持为正确字体的 80% 大小，颜色设置为浅灰色&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;表格&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;table&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;全局不显示线条，在 &lt;code&gt;table&lt;/code&gt; 中显示表格外框，并且表头有浅灰背景&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;代码&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;pre&lt;/code&gt;/&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;字体使用 &lt;code&gt;courier&lt;/code&gt; 系字体，保持与 &lt;code&gt;serif&lt;/code&gt; 有比较一致的显示效果&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th rowspan=&quot;5&quot;&gt;特殊符号&lt;/th&gt;
+          &lt;td&gt;着重号&lt;/td&gt;
+          &lt;td&gt;在文字下加点（•）&lt;/td&gt;
+          &lt;td&gt;在支持 &lt;code&gt;:after&lt;/code&gt; 和 &lt;code&gt;:before&lt;/code&gt; 的浏览器可以做渐进增强实现&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;专名号&lt;/td&gt;
+          &lt;td&gt;&lt;u&gt;林建锋&lt;/u&gt;&lt;/td&gt;
+          &lt;td&gt;专名号，有下划线，使用 &lt;code&gt;u&lt;/code&gt; 或都 &lt;code&gt;.typo-u&lt;/code&gt; 类&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;破折号&lt;/td&gt;
+          &lt;td&gt;——&lt;/td&gt;
+          &lt;td&gt;保持一划，而非两划&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;人民币&lt;/td&gt;
+          &lt;td&gt;&amp;yen;&lt;/td&gt;
+          &lt;td&gt;使用两平等线的符号，或者 HTML 实体符号 &lt;code&gt;&amp;amp;yen;&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;删除符&lt;/td&gt;
+          &lt;td&gt;&lt;del&gt;已删除（deleted）&lt;/del&gt;&lt;/td&gt;
+          &lt;td&gt;一致化各浏览器显示，中英混排正确&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th rowspan=&quot;4&quot;&gt;加强类&lt;/th&gt;
+          &lt;td&gt;专名号&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;.typo-u&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;由于 &lt;code&gt;u&lt;/code&gt; 被 HTML4 放弃，在向后兼容上推荐使用 &lt;code&gt;&lt;u type=&quot;typo-u&quot; …&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;着重符&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;.typo-em&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;利用 &lt;code&gt;:after&lt;/code&gt; 和 &lt;code&gt;:before&lt;/code&gt; 实现着重符&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;首字下沉&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;.typo-first&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;特殊排版&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;清除浮动&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;.clearfix&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;与一般 CSS Reset 保持一对致 API&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th rowspan=&quot;5&quot;&gt;注意点&lt;/th&gt;
+          &lt;td colspan=&quot;3&quot;&gt;（1）中英文混排行高/行距&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td colspan=&quot;3&quot;&gt;（2）上下标在 IE 中显示效果&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td colspan=&quot;3&quot;&gt;（3）块/段落分割空白是否符合设计原则&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td colspan=&quot;3&quot;&gt;（4）input 多余空间问题&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;3&quot;&gt;（5）默认字体色彩，目前采用 &lt;code&gt;#333&lt;/code&gt; 在各种浏览显示比较好&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h5 id=&quot;appendix2&quot;&gt;2、开源许可&lt;/h5&gt;
+
+&lt;p&gt;TYPO.CSS 基于 &lt;a href=&quot;http://zh.wikipedia.org/wiki/MIT_License&quot;&gt;MIT License&lt;/a&gt; 开源，使用代码只需说明来源，或者引用 &lt;a href=&quot;http://typo.sofish.de/license.txt&quot;&gt;license.txt&lt;/a&gt; 即可。&lt;/p&gt;
+</content>
+   </entry>
+   
+
+</feed>
