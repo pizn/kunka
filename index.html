@@ -5,7 +5,7 @@ keywords: Jekyll theme, Kunka
 ---
 {% for post in paginator.posts %}
     <div class="article">
-        <h3 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+        <h3 class="title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
         <article class="rexp">
             <p>{{ post.excerpt }}</p>
         </article>
