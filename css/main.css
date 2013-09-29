@@ -345,9 +345,10 @@ a         { color: #91736b; text-decoration: none; }
     margin-right: 15px;
     line-height: 24px;
     vertical-align: middle;
+    border-bottom: none;
 }
 .main .article .info-link a:hover {
-    border-bottom: 3px double rgba(0, 0, 0, 0.1);
+    border-bottom: none;
 }
 
 .main .pagination {
@@ -604,6 +605,24 @@ a         { color: #91736b; text-decoration: none; }
 }
 .main .article .comment {
     margin: 30px 0 0 0;
+}
+
+.main .article .categories {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+    padding-left: 0;
+}
+.main .categories .categories-item {
+    list-style-type: none;
+    background: #99b9c4;
+    color: #fff;
+    margin-right: 10px;
+    padding: 3px 20px;
+    float: left;
+}
+.main .categories .categories-item a {
+    color: #fff;
 }
 
 .aside {
