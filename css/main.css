@@ -263,11 +263,11 @@ a         { color: #91736b; text-decoration: none; }
 }
 
 .main .article pre {
-
     margin-bottom: 1em;
     padding: 10px 10px;
     color: #4d4d4d;
     background: rgba(0, 0, 0, 0.1);
+    overflow: auto;
 }
 .main .highlight {
     position: relative;
