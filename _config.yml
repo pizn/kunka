@@ -56,8 +56,8 @@ nav:
     url: /archives.html
   - text: 资源链接
     url: /links.html
-    - text: 联系
-      url: /contact.html
+  - text: 联系
+    url: /contact.html
 
 #Author config
 author:
