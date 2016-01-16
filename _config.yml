@@ -56,7 +56,7 @@ nav:
     url: /archives.html
   - text: 联系我
     url: /contact.html
-  - text: 友情链接
+  - text: 资源链接
     url: /links.html
 
 #Author config
@@ -92,7 +92,7 @@ customLinks:
     message: Friends
   - item:
     - text: Font Awesome
-      url: http://fortawesome.github.io/Font-Awesome/
+	url: http://fortawesome.github.io/Font-Awesome/
     - text: Google Font
       url: http://www.google.com/fonts/
     - text: jQuery
