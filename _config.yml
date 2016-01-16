@@ -54,10 +54,10 @@ nav:
     url: /categories.html
   - text: 文章归档
     url: /archives.html
-  - text: 联系我
-    url: /contact.html
   - text: 资源链接
     url: /links.html
+    - text: 联系
+      url: /contact.html
 
 #Author config
 author:
