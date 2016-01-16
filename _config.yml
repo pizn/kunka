@@ -88,7 +88,7 @@ customLinks:
     - text: cnFeat
       url: http://cnfeat.com
     - text: A YEAR OF CHANGES 
-        url: http://www.ayearofchanges.com
+      url: http://www.ayearofchanges.com
     message: Friends
   - item:
     - text: Google Font
