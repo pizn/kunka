@@ -83,12 +83,12 @@ follow:
 #Links
 customLinks:
   - item:
-    - text: A YEAR OF CHANGES 
-      url: http://www.ayearofchanges.com
     - text: Azeril
       url: http://azeril.me
     - text: cnFeat
       url: http://cnfeat.com
+    - text: A YEAR OF CHANGES 
+        url: http://www.ayearofchanges.com
     message: Friends
   - item:
     - text: Google Font
