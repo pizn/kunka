@@ -44,7 +44,7 @@ description: Lawrence，互联网在线教育运营从业者，在探索和行�
 keywords: 不止笔记
 url: http://www.buzhinote.com
 feed: /atom.xml
-favicon: http://jekyllrb.com/favicon.png
+favicon: images/favicon.ico
 
 #Nav config
 nav:
