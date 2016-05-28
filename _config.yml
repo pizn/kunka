@@ -63,7 +63,7 @@ nav:
 author:
     name: 掌心
     email: zhanxin.info@gmail.com
-    imageLink: http://tp2.sinaimg.cn/1832671293/180/40020872447/1
+    imageLink: http://ww3.sinaimg.cn/mw690/da61d71fgw1e79oiolgm2j205k05k74q.jpg
     simpleIntro: 我是「展新展新」，一个矛盾体的化身，在你的掌心里。
     detailIntro:
       <p>Jekyll 是一个简洁的、特别针对博客平台的 静态网站 生成器。它使用一个模板目录作为网站布局的基础框架，并在其上运行 Textile 、 Markdown 或 Liquid 标记语言的转换器，最终生成一个完整的静态Web站点，可以被放置在Apache或者你喜欢的其他任何Web服务器上。它同时也是 GitHub Pages 、一个由 GitHub 提供的用于托管项目主页或博客的服务，在后台所运行的引擎。</p>
